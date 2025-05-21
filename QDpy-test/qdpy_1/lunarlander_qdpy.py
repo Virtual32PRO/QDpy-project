@@ -32,7 +32,7 @@ def linear_policy(theta: np.ndarray, obs: np.ndarray) -> int:
     logits = obs @ W + b
     return int(np.argmax(logits))                             
 
-# ---------- EWALUACJA ----------
+# ocena
 def evaluate_lunar(theta: np.ndarray,
                    n_episodes: int = 1,
                    render: bool = False):
